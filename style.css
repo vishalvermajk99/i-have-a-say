@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: #f3e3d9;
+}
+
+input[type="text"]:invalid {
+  border: red solid 1px;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.container > label {
+  text-align: center;
+}
+#comment {
+  /* background-color: rgb(212, 233, 238); */
+  border-radius: 0.3em;
+  border: none;
+}
+
+#addComments {
+  width: 10%;
+  padding: 5px;
+  /* background-color: darkblue; */
+  color: white;
+  color: black;
+  border: 0.25em solid #87ceeb;
+  background-color: white;
+  align-self: center;
+  border-radius: 0.5em;
+}
+#addComments:hover {
+  background-color: #87ceeb;
+  color: white;
+  border: 0.3em solid rgb(96, 96, 233);
+}
+
+.wrapper > button {
+  margin-right: 5px;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  border: 0.2em solid #ffd700;
+  border-radius: 0.5em;
+}
+
+.wrapper > button:hover {
+  box-shadow: 0.1em 0.1em 3px gold;
+}
+
+textarea {
+  height: 10vh;
+  width: 100%;
+  resize: none;
+  outline: none;
+}
+
+#allComments {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+@media only screen and (max-width: 769px) {
+  #addComments {
+    width: 80px;
+  }
+  #allComments {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  textarea {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  #addComments {
+    width: 80px;
+  }
+}
